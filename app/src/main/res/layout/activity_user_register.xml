@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.angoo.home.User_register">
+
+    <EditText
+        android:id="@+id/user_cellphone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/item"
+        android:drawableLeft="@mipmap/smartphone"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="請輸入手機"
+        android:inputType="number|phone"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/user20"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user80"
+        app:layout_constraintTop_toBottomOf="@+id/user_date" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/user_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/填寫一般使用者資料"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="填寫一般使用者資料"
+        android:textColor="#17BDA1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_register_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/item"
+        android:drawableLeft="@mipmap/email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="請輸入email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:singleLine="false"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/user20"
+        app:layout_constraintStart_toStartOf="@+id/user80"
+        app:layout_constraintTop_toTopOf="@+id/user_H73" />
+
+    <EditText
+        android:id="@+id/user_register_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/item"
+        android:drawableLeft="@mipmap/padlock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="請輸入6-20位密碼"
+        android:inputType="textPassword"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/user20"
+        app:layout_constraintStart_toStartOf="@+id/user80"
+        app:layout_constraintTop_toBottomOf="@+id/user_register_email" />
+
+    <ImageView
+        android:id="@+id/user_left"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="Back"
+        app:layout_constraintBottom_toBottomOf="@+id/user_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/left" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/user_H73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="73dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/user20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8004866" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/user80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <EditText
+        android:id="@+id/user_ID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/item"
+        android:drawableLeft="@mipmap/id"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="請輸入姓名"
+        android:inputType="textPersonName"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/user20"
+        app:layout_constraintStart_toStartOf="@+id/user80"
+        app:layout_constraintTop_toBottomOf="@+id/user_register_password" />
+
+    <EditText
+        android:id="@+id/user_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/item"
+        android:drawableLeft="@mipmap/calendar"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="生日格式(年-月-日)"
+        android:inputType="date"
+        android:onClick="date"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/user20"
+        app:layout_constraintStart_toStartOf="@+id/user80"
+        app:layout_constraintTop_toBottomOf="@+id/user_ID" />
+
+    <Spinner
+        android:id="@+id/user_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/item"
+        android:entries="@array/city"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:popupBackground="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user80"
+        app:layout_constraintTop_toBottomOf="@+id/user_cellphone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/user_taiwan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/user_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/user_spinner"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="@+id/user80"
+        app:srcCompat="@mipmap/taiwan" />
+
+    <Button
+        android:id="@+id/user_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/user_register_button"
+        android:onClick="Success"
+        android:text="註冊"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/user20"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user80"
+        app:layout_constraintTop_toBottomOf="@+id/user_spinner"
+        app:layout_constraintVertical_bias="0.805" />
+
+</android.support.constraint.ConstraintLayout>

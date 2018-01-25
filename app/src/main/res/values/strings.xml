@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string-array name="city">
+        <item>請選擇居住地</item>
+        <item>新北市</item>
+        <item>桃園市</item>
+        <item>台中市</item>
+        <item>高雄市</item>
+        <item>基隆市</item>
+        <item>新竹縣</item>
+        <item>苗栗縣</item>
+        <item>彰化縣</item>
+        <item>南投縣</item>
+        <item>雲林縣</item>
+        <item>嘉義縣</item>
+        <item>屏東縣</item>
+        <item>宜蘭縣</item>
+        <item>花蓮縣</item>
+        <item>台東縣</item>
+        <item>澎湖縣</item>
+        <item>金馬地區</item>
+
+    </string-array>
+    <string-array name="store_city">
+        <item>請選擇縣市</item>
+        <item>新北市</item>
+        <item>桃園市</item>
+        <item>台中市</item>
+        <item>高雄市</item>
+        <item>基隆市</item>
+        <item>新竹縣</item>
+        <item>苗栗縣</item>
+        <item>彰化縣</item>
+        <item>南投縣</item>
+        <item>雲林縣</item>
+        <item>嘉義縣</item>
+        <item>屏東縣</item>
+        <item>宜蘭縣</item>
+        <item>花蓮縣</item>
+        <item>台東縣</item>
+        <item>澎湖縣</item>
+        <item>金馬地區</item>
+
+    </string-array>
+</resources>

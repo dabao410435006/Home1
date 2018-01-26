@@ -24,10 +24,6 @@
             android:name=".Store_register"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".Login" />
-        <activity android:name=".User_login"
-            android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".Store_login"
-            android:windowSoftInputMode="stateHidden"></activity>
     </application>
 
 </manifest>

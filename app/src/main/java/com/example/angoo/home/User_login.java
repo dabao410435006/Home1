@@ -1,24 +1,33 @@
 package com.example.angoo.home;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Toast;
+import android.view.ViewGroup;
 
-public class User_login extends AppCompatActivity {
+/**
+ * Created by angoo on 2018/1/24.
+ */
+
+public class User_login extends Fragment {
+
+    public User_login() {
+        // Required empty public constructor
+
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_login);
     }
-    public void Back(View v){
+    //第一次顯示區塊會呼叫的，利用LayoutInflater產生畫面元件回傳
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
 
-        finish();
+        return inflater.inflate(R.layout.user_login, container, false);
+    }
 
-    }
-    public void Success(View v){
-        Toast.makeText(this,"登入成功，轉至主頁面",Toast.LENGTH_SHORT).show();
-    }
 }
+

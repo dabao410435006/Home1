@@ -6,101 +6,44 @@
     android:layout_height="match_parent"
     tools:context="com.example.angoo.home.Login">
 
-    <Button
-        android:id="@+id/user_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/register"
-        android:drawablePadding="10dp"
-        android:drawableTop="@mipmap/boy"
-        android:drawingCacheQuality="auto"
-        android:onClick="User_login"
-        android:padding="20dp"
-        android:text="一般登入"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/LH68"
-        app:layout_constraintEnd_toStartOf="@+id/LV50"
-        app:layout_constraintTop_toTopOf="@+id/LH40" />
-
-    <Button
-        android:id="@+id/store_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/register"
-        android:drawablePadding="10dp"
-        android:drawableTop="@mipmap/store"
-        android:drawingCacheQuality="auto"
-        android:onClick="Store_login"
-        android:padding="20dp"
-        android:text="店家登入"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/user_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
-        app:layout_constraintStart_toEndOf="@+id/user_login"
-        app:layout_constraintTop_toTopOf="@+id/user_login"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/RLtabs"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/arrow2"
-        android:layout_width="33dp"
-        android:layout_height="34dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="TODO"
-        android:onClick="Back"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@mipmap/left" />
-
-    <TextView
-        android:id="@+id/選擇身分"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="16dp"
-        android:text="選擇身分"
-        android:textColor="#17BDA1"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        android:elevation="1dp"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabMinWidth="0dp">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Center" />
+
+    </android.support.design.widget.TabLayout>
 
     <android.support.constraint.Guideline
-        android:id="@+id/LH40"
+        android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.1" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/LH68"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.68133533" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/LV50"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.50121653" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/RLpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 </android.support.constraint.ConstraintLayout>

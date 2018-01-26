@@ -6,12 +6,20 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:actionMenuTextColor">#236089</item>
     </style>
     <style name="AppTheme.NoActionBar">
         <!--隐藏ActionBar-->
         <item name="windowActionBar">false</item>
         <!--不显示标题-->
         <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme0" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#17BDA1</item>
+    </style>
+    <style name="Theme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#666FA1</item>
     </style>
 
 </resources>

@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register" />
+        <activity android:name=".Register"/>
         <activity
             android:name=".User_register"
             android:windowSoftInputMode="stateHidden" />
@@ -25,7 +25,7 @@
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".Login" />
         <activity android:name=".User_login"
-            android:windowSoftInputMode="stateHidden"/>
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".Store_login"
             android:windowSoftInputMode="stateHidden"></activity>
     </application>

@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register"/>
+        <activity android:name=".Register" />
         <activity
             android:name=".User_register"
             android:windowSoftInputMode="stateHidden" />
@@ -24,6 +24,18 @@
             android:name=".Store_register"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".Login" />
+        <activity
+            android:name=".Navigation"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Friend"
+            android:parentActivityName=".Navigation" />
+        <activity
+            android:name=".Chatroom"
+            android:parentActivityName=".Navigation" />
+        <activity android:name=".Setting"
+            android:parentActivityName=".Navigation"></activity>
     </application>
 
 </manifest>

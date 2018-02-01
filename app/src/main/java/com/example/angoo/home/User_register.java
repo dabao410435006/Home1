@@ -55,5 +55,6 @@ public class User_register extends AppCompatActivity {
     }
     public void Success(View v){
         Toast.makeText(this,"註冊成功，轉至主頁面",Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, Navigation.class));
     }
 }

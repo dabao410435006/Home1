@@ -15,7 +15,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Login extends AppCompatActivity {
+/*private int[] setIcons = {
+            R.drawable.user_home,
+            R.drawable.user_heart,
 
+    };*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +38,11 @@ public class Login extends AppCompatActivity {
         //讓tablayout與viewpager連動
         tabLayout.setupWithViewPager(viewPager);
 
+/*for(int i =0; i < setIcons.length;i++){
+            tabLayout.getTabAt(i).setIcon(setIcons[i]);
 
+
+        }*/
 
     }
 

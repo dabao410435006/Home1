@@ -2,6 +2,7 @@
     <string name="app_name">Home</string>
     <string-array name="city">
         <item>請選擇居住地</item>
+        <item>台北市</item>
         <item>新北市</item>
         <item>桃園市</item>
         <item>台中市</item>
@@ -23,6 +24,7 @@
     </string-array>
     <string-array name="store_city">
         <item>請選擇縣市</item>
+        <item>台北市</item>
         <item>新北市</item>
         <item>桃園市</item>
         <item>台中市</item>
@@ -42,4 +44,23 @@
         <item>金馬地區</item>
 
     </string-array>
+    <string-array name="menu">
+        <item>NIKE</item>
+        <item>NIKE</item>
+        <item>PUMA</item>
+        <item>VANS</item>
+    </string-array>
+
+    <string-array name="item">
+        <item>交友</item>
+        <item>大樹</item>
+        <item>鞋子</item>
+        <item>豬</item>
+    </string-array>
+    <string name="title_activity_navigation">Navigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

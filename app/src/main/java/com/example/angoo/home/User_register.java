@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
@@ -21,6 +22,10 @@ public class User_register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_register);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.user_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("  ");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         date = (TextView) findViewById(R.id.user_date);
 
     }
@@ -48,11 +53,7 @@ public class User_register extends AppCompatActivity {
                 }, mYear, mMonth, mDay);
         dpd.show();
     }
-    public void Back(View v){
 
-        finish();
-
-    }
     public void Success(View v){
         Toast.makeText(this,"註冊成功，轉至主頁面",Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, Navigation.class));

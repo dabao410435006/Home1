@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.angoo.home">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <permission
+        android:name="com.example.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.permission.MAPS_RECEIVE"/>
+
 
     <application
         android:allowBackup="true"
@@ -16,26 +32,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Register" />
+        <activity android:name=".Register" android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".User_register"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".Register"/>
         <activity
             android:name=".Store_register"
-            android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".Login" />
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".Register"/>
+        <activity android:name=".Login" android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".Navigation"
             android:label="@string/title_activity_navigation"
             android:theme="@style/AppTheme" />
+
         <activity
             android:name=".Friend"
             android:parentActivityName=".Navigation" />
         <activity
             android:name=".Chatroom"
             android:parentActivityName=".Navigation" />
-        <activity android:name=".Setting"
-            android:parentActivityName=".Navigation"></activity>
+        <activity
+            android:name=".Setting"
+            android:parentActivityName=".Navigation" />
+        <activity
+            android:name=".Store_navigation"
+            android:label="@string/title_activity_store_navigation"
+            android:theme="@style/AppTheme"></activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCkxYzooOd8JvVqezUZtNlRP4cynJHPh7A"></meta-data>
     </application>
 
 </manifest>

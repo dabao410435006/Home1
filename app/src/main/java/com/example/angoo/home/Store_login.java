@@ -44,7 +44,7 @@ public class Store_login extends Fragment {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Toast.makeText(getActivity(), "登入成功，轉至主頁面", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getActivity(), Navigation.class));
+                startActivity(new Intent(getActivity(), Store_navigation.class));
             }
         });
     }

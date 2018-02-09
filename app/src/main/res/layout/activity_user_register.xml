@@ -33,19 +33,22 @@
         android:id="@+id/user_toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
+        android:background="@android:color/background_light"
+        android:elevation="4dp"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:theme="@style/AppTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@mipmap/left" />
 
     <TextView
         android:id="@+id/填寫一般使用者資料"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
         android:text="填寫一般使用者資料"
         android:textColor="#17BDA1"
         android:textSize="24sp"
@@ -92,19 +95,6 @@
         app:layout_constraintEnd_toStartOf="@+id/user20"
         app:layout_constraintStart_toStartOf="@+id/user80"
         app:layout_constraintTop_toBottomOf="@+id/user_register_email" />
-
-    <ImageView
-        android:id="@+id/user_left"
-        android:layout_width="33dp"
-        android:layout_height="34dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:onClick="Back"
-        app:layout_constraintBottom_toBottomOf="@+id/user_toolbar"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/left" />
 
     <android.support.constraint.Guideline
         android:id="@+id/user_H73"

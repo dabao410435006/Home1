@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -24,6 +25,12 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar3);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("  ");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ViewPager viewPager = (ViewPager) findViewById(R.id.RLpager);
         //getSupportFragmentManager()管理活動內的區塊物件
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());

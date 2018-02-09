@@ -47,36 +47,24 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
+        android:background="@android:color/background_light"
+        android:elevation="4dp"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/arrow"
-        android:layout_width="33dp"
-        android:layout_height="34dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="TODO"
-        android:onClick="Back"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@mipmap/left" />
+        app:navigationIcon="@mipmap/login_left" />
 
     <TextView
         android:id="@+id/選擇身分"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
         android:text="選擇身分"
-        android:textColor="#17BDA1"
+        android:textColor="@color/text_color_primary"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintLeft_toLeftOf="parent"
